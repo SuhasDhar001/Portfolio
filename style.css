@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #000000;
+  --btn-color: #3c91e6;
+  --btn-text-col: #ffffff;
+}
+
+/* profile */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 7rem;
+}
+.sub-container-1 h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.sub-container-1 h2 {
+  font-size: 3.5rem;
+  text-size-adjust: 100%;
+  margin-top: 2rem;
+}
+.sub-container-1 p {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+/* sub-containner2 */
+.sub-container-2 img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.hire-me-btn {
+  background-color: var(--btn-color);
+  color: var(--btn-text-col);
+}
+.port-btn {
+  border: 2px var(--btn-color) solid;
+}
+.port-btn:hover {
+  background-color: var(--btn-color);
+}
+
+/* skills */
+.skills h3 {
+  margin-top: 5rem;
+  font-size: 3rem;
+}
+
+.skills-pic {
+  height: 150px;
+  width: 150px;
+}
+
+/* projects */
+.projects h3 {
+  margin-top: 3rem;
+}
+
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3rem;
+}
+.min-card1 img {
+  height: 50px;
+  width: 50px;
+}
+
+.sub-card2 img {
+  height: 200px;
+  width: 400px;
+}
+
+/* services */
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 3rem;
+}
+.cards p {
+  text-size-adjust: 100%;
+}
+.serv-pics {
+  width: 100px;
+  height: 100px;
+  margin-left: 5rem;
+}
+
+/* responsiveness */
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .serv-pics {
+    margin-left: 11rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .serv-pics {
+    margin-right: 10rem;
+    margin-left: 8rem;
+  }
+}
